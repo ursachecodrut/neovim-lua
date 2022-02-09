@@ -2,7 +2,8 @@
 -- General settings
 -- ------------------------
 vim.g.builting_lsp = true
-
+vim.opt.clipboard = 'unnamedplus' -- copy/paste to system clipboard
+vim.opt.swapfile = false          -- don't use swapfile
 
 -- Behaviors
 vim.opt.belloff = "all" -- no bells!
@@ -25,6 +26,8 @@ vim.opt.lazyredraw = true
 
 -- Colors
 -- vim.opt.termguicolors = true
+-- vim.o.background = 'dark'
+require("onedarkpro").load()
 
 -- Look and feel
 vim.opt.number = true -- number

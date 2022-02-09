@@ -104,6 +104,11 @@ _G.packer_plugins = {
     path = "/home/codrut/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["onedarkpro.nvim"] = {
+    loaded = true,
+    path = "/home/codrut/.local/share/nvim/site/pack/packer/start/onedarkpro.nvim",
+    url = "https://github.com/olimorris/onedarkpro.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/codrut/.local/share/nvim/site/pack/packer/start/packer.nvim",
