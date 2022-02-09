@@ -30,6 +30,7 @@ vim.o.background = 'dark'
 require("onedarkpro").load()
 
 -- Look and feel
+vim.opt.showmode = false -- we don't need to see things like -- INSERT -- anymore
 vim.opt.number = true -- number
 vim.opt.relativenumber = true -- relative number
 vim.opt.wrap = false -- don't wrap text

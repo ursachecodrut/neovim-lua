@@ -54,6 +54,11 @@ return packer.startup(function(use)
 
     use 'olimorris/onedarkpro.nvim'
 
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    }
+
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
