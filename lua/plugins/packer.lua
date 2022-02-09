@@ -39,6 +39,7 @@ return packer.startup(function(use)
 
     -- LSP
     use 'neovim/nvim-lspconfig'
+    use 'onsails/lspkind-nvim'
 
     -- autocomplete
     use {
