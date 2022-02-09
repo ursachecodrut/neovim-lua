@@ -53,6 +53,9 @@ return packer.startup(function(use)
             },
     }
 
+    -- treesitter
+    use 'nvim-treesitter/nvim-treesitter'
+
 
     -- autopair
     use {
