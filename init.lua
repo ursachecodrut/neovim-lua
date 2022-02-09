@@ -15,3 +15,5 @@
 
 -- Import lua modules
 require('settings')
+require('keymaps')
+require('plugins/packer')
