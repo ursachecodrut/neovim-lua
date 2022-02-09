@@ -25,8 +25,8 @@ vim.opt.lazyredraw = true
 
 
 -- Colors
--- vim.opt.termguicolors = true
--- vim.o.background = 'dark'
+vim.opt.termguicolors = true
+vim.o.background = 'dark'
 require("onedarkpro").load()
 
 -- Look and feel
