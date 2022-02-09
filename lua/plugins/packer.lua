@@ -52,6 +52,16 @@ return packer.startup(function(use)
             },
     }
 
+
+    -- autopair
+    use {
+        'windwp/nvim-autopairs',
+        config = function()
+            require('nvim-autopairs').setup()
+        end
+    }
+
+
     use 'olimorris/onedarkpro.nvim'
 
     use {
