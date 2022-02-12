@@ -37,37 +37,6 @@ end
 return packer.startup(function(use)
     use "wbthomason/packer.nvim" -- packer
 
-    -- LSP
-    use 'neovim/nvim-lspconfig'
-    use 'onsails/lspkind-nvim'
-
-    -- autocomplete
-    use {
-        'hrsh7th/nvim-cmp',
-        requires = {
-            'L3MON4D3/LuaSnip',
-            'hrsh7th/cmp-nvim-lsp',
-            'hrsh7th/cmp-path',
-            'hrsh7th/cmp-buffer',
-            'saadparwaiz1/cmp_luasnip',
-            },
-    }
-
-    -- treesitter
-    use 'nvim-treesitter/nvim-treesitter'
-
-
-    -- autopair
-    use {
-        'windwp/nvim-autopairs',
-        config = function()
-            require('nvim-autopairs').setup()
-        end
-    }
-
-    use 'tpope/vim-fugitive'
-
-    use 'olimorris/onedarkpro.nvim'
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
