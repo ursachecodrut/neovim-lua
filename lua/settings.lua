@@ -25,7 +25,7 @@ vim.opt.lazyredraw = true
 
 
 -- Colors
---vim.opt.termguicolors = true
+vim.opt.termguicolors = true
 vim.o.background = 'dark'
 
 -- Look and feel
