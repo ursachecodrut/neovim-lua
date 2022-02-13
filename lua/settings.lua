@@ -25,9 +25,8 @@ vim.opt.lazyredraw = true
 
 
 -- Colors
-vim.opt.termguicolors = true
+--vim.opt.termguicolors = true
 vim.o.background = 'dark'
-require("onedarkpro").load()
 
 -- Look and feel
 vim.opt.showmode = false -- we don't need to see things like -- INSERT -- anymore
