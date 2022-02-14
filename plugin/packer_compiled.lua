@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/home/codrut/.local/share/nvim/site/pack/packer/start/lspkind-nvim",
     url = "https://github.com/onsails/lspkind-nvim"
   },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/home/codrut/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/codrut/.local/share/nvim/site/pack/packer/start/nvim-cmp",
