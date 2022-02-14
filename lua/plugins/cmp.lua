@@ -4,6 +4,7 @@ if not cmp_status_ok then
     return
 end
 
+
 local snip_status_ok, luasnip = pcall(require, "luasnip")
 if not snip_status_ok then
     print('error luasnip')
@@ -12,7 +13,7 @@ end
 
 local lspkind_status_ok, lspkind = pcall(require, "lspkind")
 if not lspkind_status_ok then
-    print('error kspkind')
+    print('error lspkind')
     return
 end
 
@@ -20,13 +21,8 @@ cmp.setup {
     snippet = {
         expand = function(args)
             luasnip.lsp_expand(args.body)
-        end,
+        end
     },
-
-    completion = {
-        keyword_length = 2
-    },
-
 
     mapping = {
         ['<C-n>'] = cmp.mapping.select_next_item(),
@@ -58,14 +54,7 @@ cmp.setup {
             else
                 fallback()
             end
-        end
-    },
-
-    sources = {
-        { name = 'nvim_lsp' },
-        { name = 'luasnip' },
-        { name = 'path' },
-        { name = 'buffer' },
+      end
     },
 
     formatting = {
@@ -79,5 +68,27 @@ cmp.setup {
                 return vim_item
             end
         })
-    }
+    },
+
+    sources = {
+        { name = 'nvim_lsp' },
+        { name = "luasnip" },
+        { name = "buffer" },
+        { name = "path" },
+    },
+
+    confirm_opts = {
+        behavior = cmp.ConfirmBehavior.Replace,
+        select = false,
+    },
+
+    documentation = {
+        border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+    },
+
+    experimental = {
+        ghost_text = false,
+        native_menu = false,
+    },
+
 }
