@@ -78,6 +78,9 @@ return packer.startup(function(use)
     run = ":TSUpdate",
   }
 
+  -- autopairs
+  use 'windwp/nvim-autopairs'
+
   use 'nvim-lualine/lualine.nvim'
 
   -- Automatically set up your configuration after cloning packer.nvim
